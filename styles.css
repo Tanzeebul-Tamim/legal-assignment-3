@@ -1,0 +1,92 @@
+.banner {
+  background-image: url("./images/Rectangle 4.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.banner-title {
+  font-family: "EB Garamond", serif;
+  font-size: 72px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+}
+
+.banner-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+.big-button:hover {
+  background-color: #8a6133 !important;
+  color: rgb(252, 252, 155) !important;
+}
+
+.search:hover {
+  background-color: #8a6133 !important;
+  color: rgb(252, 252, 155) !important;
+}
+
+.get-Consultation:hover {
+  background-color: #8a6133 !important;
+  color: rgb(252, 252, 155) !important;
+}
+
+.search {
+  width: 120px;
+  height: 64px;
+}
+
+.form-control::placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #a0a0a0;
+}
+
+@media only screen and (min-width: 577px) {
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    max-width: 360px;
+  }
+
+  .banner-title {
+    font-family: "EB Garamond", serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+
+  .banner-description {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #e7e7e7;
+  }
+
+  .search {
+    height: 44px;
+  }
+
+  .big-button {
+    line-height: 20px;
+    padding: auto;
+    border-radius: 12px !important;
+  }
+}

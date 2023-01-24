@@ -1,3 +1,6 @@
+/*------------
+    Banner
+-------------*/
 .banner {
   background-image: url("./images/Rectangle 4.png");
   background-repeat: no-repeat;
@@ -46,6 +49,69 @@
   color: #a0a0a0;
 }
 
+/*-------------------------
+  The Legal Practice Area
+--------------------------*/
+.legal-title {
+  font-family: "EB Garamond", serif;
+  color: #414040;
+}
+
+.legal-description {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #707070;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card i {
+    color: #B68C5A;
+    font-size: 35px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card i:hover {
+    color: #8a6133;
+    transform: rotate(1080deg) scale(1.4);
+}
+
+.card-title {
+  text-align: center;
+  font-family: "EB Garamond";
+  font-weight: 800;
+  font-size: 32px;
+  text-align: center;
+  color: #414040;
+}
+
+.card-text {
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #707070;
+}
+
+.card-gradient {
+  background: linear-gradient(180deg, #f3f3f3 0%, rgba(243, 243, 243, 0) 100%);
+}
+
+/*-------------------------
+        Media Query
+--------------------------*/
 @media only screen and (min-width: 577px) {
   .centered {
     position: absolute;
@@ -53,15 +119,24 @@
     left: 50%;
     transform: translate(-50%, -30%);
   }
+
+  .legal-title {
+    font-family: "EB Garamond", serif;
+    margin-top: 120px !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+  .main-banner {
+    height: 290px;
+  }
+
   .centered {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -85%);
-    max-width: 360px;
+    transform: translate(-50%, -146%);
+    max-width: 355px;
   }
 
   .banner-title {
@@ -75,9 +150,10 @@
 
   .banner-description {
     font-family: "Poppins", sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     color: #e7e7e7;
+    margin-top: 8px !important;
   }
 
   .search {
@@ -88,5 +164,22 @@
     line-height: 20px;
     padding: auto;
     border-radius: 12px !important;
+  }
+
+  .legal-title {
+    margin-top: 50px;
+  }
+
+  .legal-description {
+    text-align: justify;
+  }
+
+  .card {
+    background: linear-gradient(
+      180deg,
+      #f3f3f3 0%,
+      rgba(243, 243, 243, 0) 100%
+    );
+    border: 0;
   }
 }

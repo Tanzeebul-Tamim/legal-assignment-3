@@ -1,17 +1,14 @@
 /*-------------------
    anchor tag style
 -------------------*/
-a {
+#box a,
+.legal-description a {
   color: #d17000 !important;
 }
 
 /*------------
     Banner
 -------------*/
-.nav-item > a {
-  color: #707070 !important;
-}
-
 .banner {
   background-image: url("./images/Rectangle 4.png");
   background-repeat: no-repeat;
@@ -57,7 +54,7 @@ a {
 .form-control::placeholder {
   font-family: "Poppins";
   font-size: 16px;
-  color: #a0a0a0;
+  color: #707070;
 }
 
 /*-------------------------
@@ -215,6 +212,43 @@ a {
 /*-------------------------
       Extra Section
 --------------------------*/
+#extra-title {
+  font-family: "EB Garamond";
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  color: #414040;
+}
+
+/*-------------------------
+        Contact Us
+--------------------------*/
+.icon {
+  width: 18% !important;
+}
+
+.icon-bg {
+  background-color: #70707010 !important;
+}
+
+.contact {
+  width: 570px;
+  height: 72px;
+  background: #f3f3f3;
+  border-radius: 8px;
+}
+
+.submit-btn {
+  height: 64px;
+}
+
+.text-area {
+  height: 180px;
+}
+
+/*-------------------------
+           Footer
+--------------------------*/
 
 
 /*-------------------------
@@ -311,5 +345,22 @@ a {
 
   .accordion {
     padding: 0 !important;
+  }
+
+  .contact {
+    width: auto;
+    height: auto;
+    background: #f3f3f3;
+    border-radius: 8px;
+  }
+
+  .case-btn {
+    background: #b68c5a;
+    border: 0px;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: 22px;
+    height: auto;
   }
 }

@@ -334,33 +334,190 @@
                         </div>
                     </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon bikerz-zone-light-red" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bikerz-zone-light-red" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
 
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon bikerz-zone-light-red" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bikerz-zone-light-red" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+            </div>
         </section>
 
         <!-----------------------
                    FAQ
         -------------------------->
-        <section>
+        <section id="box" class="d-flex flex-column">
             <!-----------------------
                       Title
             ------------------------>
             <div>
                 <h3 class="legal-title text-center fs-1 mt-lg-5 mb">Frequently Asked Questions</h3>
-                <p class="legal-description text-center mt-4 mb-5">We pride ourselves on providing an exceptional
-                    service to our clients, but you don’t just have to take our word for it. Read what our clients have
-                    to say about working with us.</p>
+                <p class="legal-description text-center mt-4 mb-5">Got a question? We are here to answer. If you don't
+                    see your question here, drop us a line on our <a href="">Contact Page</a> </p>
+            </div>
+
+            <!-----------------------
+                    Accordion
+            ------------------------>
+            <div id="accordion" class="d-flex justify-content-between">
+                <div class="accordion pe-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item border border-0 my-4">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button accordion-title" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <strong>1. What are the differences between flexbox & grid?</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p><strong>Flexbox</strong></p>
+                                    <p>a) Flexbox is unidirectional.</p>
+                                    <p>b) Flexbox focuses on content flow (content first). Widths or heights of flex
+                                        items are determined by the content of the item. Spacing and aligning items are
+                                        flexible. </p>
+                                    <p>c) Flexbox is used to design small implements, align elements, and design
+                                        content-first designs.</p>
+                                    <br>
+                                    <p><strong>Grid</strong></p>
+                                    <p>a) Grid is two-dimensional.</p>
+                                    <p>b) Grid focuses on content placement (layout first). Provides a mechanism to
+                                        divide available viewport for layout into columns and rows. Each item can be
+                                        positioned anywhere in a grid cell.</p>
+                                    <p>c) Grid is used to design complex implements, make a gap between block elements,
+                                        overlap elements and design layout-first designs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border border-0 my-4">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed accordion-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <strong>2. What's the purpose of media query</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p><strong>Media Query</strong></p>
+                                    <p>a) Keypart of responsive web design.</p>
+                                    <p>b) They allow to create different layouts depending on the size of the viewport.
+                                    </p>
+                                    <p>c) Used to check width and height of the viewport.</p>
+                                    <p>d) Used to check width & height of the device. </p>
+                                    <p>e) Used to check orientation (landscape/portrait).</p>
+                                    <p>f) Used to check reesolution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border border-0 my-4">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed accordion-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    <p><strong>3. What is CSS box model & how does it work?</strong></p>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p><strong>CSS Box Model</strong></p>
+                                    <p>A rectangle box is wrapped around every HTML element. The CSS box model is used
+                                        to determine the height and width of the rectangular box. The CSS Box consists
+                                        of Width and height (or in the absence of that, default values and the content
+                                        inside), padding, borders, margin.</p>
+                                    <ul>
+                                        <li><strong>Content:</strong> Actual Content of the box where the text or image
+                                            is placed.
+                                        </li>
+                                        <li><strong>Padding:</strong> Area surrounding the content (Space between the
+                                            border and content).
+                                        </li>
+                                        <li>
+                                            <strong>Border:</strong> Area surrounding the padding.
+                                        </li>
+                                        <li>
+                                            <strong>Margin:</strong> Area surrounding the border.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border border-0 my-4">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed accordion-title" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    <p><strong>4. What is semantic tag and what is its purpose?</strong></p>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p><strong>Semantic Tag</strong></p>
+                                    <p>The semantic HTML tags clearly describes its meaning to both the browser and the
+                                        developer. It helps the search engines and other user devices to determine the
+                                        importance and context of web pages. The pages made with semantic elements are
+                                        much easier to read. It has greater accessibility. It offers a better user
+                                        experience. For example, tags like <strong> &lt;header&gt;,
+                                            &lt;article&gt;,</strong> and <strong> &lt;footer&gt; </strong>are semantic
+                                        HTML tags. They clearly indicate the role of the content they contain.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="ps-5" src="./images/Framee.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-----------------------
+             Extra Section
+        -------------------------->
+        <section>
+            <div>
+                <h2 class="section-title">How does it work?</h2>
+            </div>
+            <div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 border-0">
+                        <img src="./images/pointer.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 border-0">
+                        <img src="./images/glass.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 border-0">
+                        <img src="./images/text.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </section>
     </body>

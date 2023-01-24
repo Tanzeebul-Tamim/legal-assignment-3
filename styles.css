@@ -1,6 +1,17 @@
+/*-------------------
+   anchor tag style
+-------------------*/
+a {
+  color: #d17000 !important;
+}
+
 /*------------
     Banner
 -------------*/
+.nav-item > a {
+  color: #707070 !important;
+}
+
 .banner {
   background-image: url("./images/Rectangle 4.png");
   background-repeat: no-repeat;
@@ -147,21 +158,64 @@
   padding: 50px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   border-radius: 10px;
   background-repeat: no-repeat;
 }
 
 #one {
-  background-image: url('./images/Rectangle 7.png'), url("./images/carousel\ background-1.png");
+  background-image: url("./images/Rectangle 7.png"),
+    url("./images/carousel\ background-1.png");
 }
 
 #two {
-  background-image: url('./images/Rectangle 7.png'), url("./images/carousel\ background-2.png");
+  background-image: url("./images/Rectangle 7.png"),
+    url("./images/carousel\ background-2.png");
 }
 
 #three {
-  background-image: url('./images/Rectangle 7.png'), url("./images/carousel\ background-3.png");
+  background-image: url("./images/Rectangle 7.png"),
+    url("./images/carousel\ background-3.png");
 }
+
+/*-------------------------
+          Accordion
+--------------------------*/
+.accordion-header {
+  background: #f3f3f3;
+  border-radius: 8px;
+}
+
+.accordion-title {
+  font-family: "EB Garamond";
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 31px;
+  color: #414040;
+}
+
+.accordion-body {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #707070;
+}
+
+.accordion-item .accordion-button {
+  background: #eeeded;
+  border-radius: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #b46b12;
+}
+
+/*-------------------------
+      Extra Section
+--------------------------*/
+
 
 /*-------------------------
         Media Query
@@ -242,5 +296,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -30%);
+  }
+
+  #accordion {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    justify-content: center;
+  }
+
+  #accordion .image img {
+    width: 100%;
+  }
+
+  .accordion {
+    padding: 0 !important;
   }
 }

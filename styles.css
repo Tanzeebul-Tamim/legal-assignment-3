@@ -70,21 +70,23 @@
   flex-direction: column;
   align-items: center;
   padding: 30px;
+  transition: filter 0.2s ease-in-out;
 }
 
 .card:hover {
-    cursor: pointer;
+  cursor: pointer;
+  filter: brightness(0.85);
 }
 
 .card i {
-    color: #B68C5A;
-    font-size: 35px;
-    transition: transform 0.5s ease-in-out;
+  color: #b68c5a;
+  font-size: 35px;
+  transition: transform 0.5s ease-in-out;
 }
 
-.card i:hover {
-    color: #8a6133;
-    transform: rotate(1080deg) scale(1.4);
+.card:hover i {
+  color: #8a6133;
+  transform: rotate(360deg) scale(1.4);
 }
 
 .card-title {
@@ -107,6 +109,58 @@
 
 .card-gradient {
   background: linear-gradient(180deg, #f3f3f3 0%, rgba(243, 243, 243, 0) 100%);
+}
+
+/*-------------------------
+          Carousel
+--------------------------*/
+.carousel-title {
+  font-family: "EB Garamond";
+  font-weight: 800;
+  font-size: 24px;
+  margin-top: 24px;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+
+.carousel-sub-title {
+  font-family: "Poppins";
+  font-weight: 100;
+  font-size: 16px;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.carousel-description {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+#one,
+#two,
+#three {
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+
+#one {
+  background-image: url('./images/Rectangle 7.png'), url("./images/carousel\ background-1.png");
+}
+
+#two {
+  background-image: url('./images/Rectangle 7.png'), url("./images/carousel\ background-2.png");
+}
+
+#three {
+  background-image: url('./images/Rectangle 7.png'), url("./images/carousel\ background-3.png");
 }
 
 /*-------------------------
@@ -181,5 +235,12 @@
       rgba(243, 243, 243, 0) 100%
     );
     border: 0;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
   }
 }

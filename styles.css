@@ -266,11 +266,12 @@ footer {
   color: #7a7a7a;
 }
 
-.links div:hover {
+.links:hover {
   color: #7a7a7a;
+  cursor: pointer;
 }
 
-.links div, .footer-description .mail {
+.links, .footer-description .mail {
   transition: color 0.2s ease-in-out;
 }
 

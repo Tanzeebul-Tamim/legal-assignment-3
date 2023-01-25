@@ -178,11 +178,6 @@
 /*-------------------------
           Accordion
 --------------------------*/
-.accordion-header {
-  background: #f3f3f3;
-  border-radius: 8px;
-}
-
 .accordion-title {
   font-family: "EB Garamond";
   font-weight: 800;
@@ -198,6 +193,8 @@
   font-size: 16px;
   line-height: 26px;
   color: #707070;
+  background: #eeeded;
+  border-radius: 9px;
 }
 
 .accordion-item .accordion-button {
@@ -242,6 +239,11 @@
   height: 64px;
 }
 
+.submit-btn:hover {
+  background-color: #8a6133 !important;
+  color: rgb(252, 252, 155) !important;
+}
+
 .text-area {
   height: 180px;
 }
@@ -249,7 +251,46 @@
 /*-------------------------
            Footer
 --------------------------*/
+footer {
+  background-color: #111111;
+}
 
+.footer-title {
+  font-family: "EB Garamond";
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.footer-description .mail:hover {
+  color: #7a7a7a;
+}
+
+.links div:hover {
+  color: #7a7a7a;
+}
+
+.links div, .footer-description .mail {
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-description {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #cfcfcf;
+}
+
+.footer-description.links,.mail:hover {
+  cursor: pointer;
+}
+
+#mail {
+  margin-top: 30px;
+}
+
+footer .row {
+  padding: 150px 60px 150px;
+}
 
 /*-------------------------
         Media Query
@@ -362,5 +403,9 @@
     font-size: 18px;
     line-height: 22px;
     height: auto;
+  }
+
+  .text-area {
+    height: 80px;
   }
 }
